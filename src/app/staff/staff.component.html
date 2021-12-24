@@ -1,0 +1,26 @@
+<div>
+    <h1>Staff Detail</h1><br>
+    <form #GetNewRequestForm="ngForm" (ngSubmit)="post_newreqstaff(GetNewRequestForm.value)">
+        <label for="Username">Username</label><br>
+        <input type="text" id="Username" name="UserName" [(ngModel)]="user.username"><br>
+        <label for="Password">Password</label><br>
+        <input type="text" id="Password" name="Password" [(ngModel)]="user.password"><br>
+        <label for="Email">Email</label><br>
+        <input type="text" id="Email" name="Email" [(ngModel)]="user.email"><br>
+        <label for="Phone">Phone</label><br>
+        <input type="text" id="Phone" name="Phone" [(ngModel)]="user.phone"><br>
+        <label for="High">High</label><br>
+        <input type="text" id="High" name="High" [(ngModel)]="user.high"><br>
+        <label for="Department"> Department</label><br>
+        <input type="text" id="Department" name="Department" [(ngModel)]="user.department"><br>
+        <label for="College">College</label><br>
+        <input type="text" id="College" name="College" [(ngModel)]="user.college"><br>
+        <label for="UserImage">UserImage</label><br>
+        <input type="text" id="UserImage" name="UserImage" [(ngModel)]="user.userImage"><br>
+        <label for="Experience">Experience</label><br>
+        <input type="text" id="Experience" name="Experience" [(ngModel)]="user.experience"><br>
+        
+        <input type="submit" value="submit">
+    </form>
+</div>
+

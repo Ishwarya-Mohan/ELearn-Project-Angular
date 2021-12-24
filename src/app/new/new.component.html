@@ -1,0 +1,56 @@
+
+<form class="my-form" #LoginForm=ngForm (ngSubmit)="post_api(LoginForm.value)">
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input matInput class="form-control"
+                 ngControl="username"
+                 placeholder="Username" type="text"  >
+                
+              <!-- <input matInput placeholder="Username" [(ngModel)]="user.username" name="Username" required> -->
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput class="form-control"
+             ngControl="password"
+             placeholder="Password" type="password"  >
+            <!-- <input matInput placeholder="Password" [(ngModel)]="user.password"name="Password" required> -->
+          </mat-form-field></td>
+        </tr></table>
+      </form>
+      
+    </mat-card-content>
+     <mat-card-actions>
+      <button mat-raised-button type="submit"  color="primary">Login</button>
+      <h3>You are a new user? Please  <button mat-button class="menu-button"  routerLink="/register" > Register</button> here</h3>
+    </mat-card-actions> 
+  </mat-card>
+
+ 
+
+
+
+
+<!-- <div>
+    <h1>Login</h1><br>
+    <form #LoginForm="ngForm" (ngSubmit)="post_api(LoginForm.value)">
+        <label for="UserName">Name</label><br>
+        <input type="text" id="Username" name="UserName" [(ngModel)]="user.username"><br>
+        <label for="Password">Password</label><br>
+        <input type="text" id="Password" name="Password" [(ngModel)]="user.password"><br>
+        <h3>You are a new user? Please  <button mat-button class="menu-button"  routerLink="/register" > Register</button> here</h3>
+        <input type="submit" value="submit">
+       
+    </form>
+</div> -->
